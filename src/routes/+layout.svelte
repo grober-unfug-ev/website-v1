@@ -1,9 +1,10 @@
 <script>
     import "../app.css";
     import logo from '$lib/assets/logo.png';
-    import {Fa} from 'svelte-fa'
-    import { faInstagram, faFacebook } from '@fortawesome/free-brands-svg-icons'
     import {Navbar, NavBrand, NavHamburger, NavLi, NavUl} from "flowbite-svelte";
+    import { Footer, FooterCopyright, FooterLinkGroup, FooterLink } from 'flowbite-svelte';
+
+    $: currentYear = new Date().getFullYear();
 </script>
 
 <Navbar class="bg-purple-950 drop-shadow-lg">
@@ -13,8 +14,8 @@
     </NavBrand>
     <NavHamburger class="text-purple-300 hover:text-purple-200 hover:bg-purple-800" />
     <NavUl classUl="bg-purple-950">
-        <NavLi class="text-purple-300 hover:text-purple-200 hover:text-purple-200 hover:bg-purple-700" href="/">Home</NavLi>
-        <NavLi class="text-purple-300 hover:text-purple-200 hover:text-purple-200 hover:bg-purple-700" href="/downloads">Downloads</NavLi>
+        <NavLi class="text-[1.1rem] text-purple-300 hover:text-purple-200 hover:text-purple-200 hover:bg-purple-700" href="/">Home</NavLi>
+        <NavLi class="text-[1.1rem] text-purple-300 hover:text-purple-200 hover:text-purple-200 hover:bg-purple-700" href="/downloads">Downloads</NavLi>
 
         <span class="border-l-2 border-purple-900"></span>
 
@@ -32,3 +33,12 @@
 <main class="h-screen bg-purple-900 text-purple-100 p-4">
     <slot />
 </main>
+
+<Footer class="bg-neutral-900 p-4">
+    <FooterCopyright spanClass="block text-sm text-gray-500 text-center" href="/" by="Grober Unfug e.V." year={currentYear} copyrightMessage="" />
+    <FooterLinkGroup ulClass="pt-2 sm:pt-4 justify-center flex flex-wrap items-center mt-3 text-sm text-gray-500">
+        <FooterLink href="/imprint">Impressum</FooterLink>
+        <FooterLink href="/contact">Kontakt</FooterLink>
+        <FooterLink href="/downloads">Downloads</FooterLink>
+    </FooterLinkGroup>
+</Footer>
