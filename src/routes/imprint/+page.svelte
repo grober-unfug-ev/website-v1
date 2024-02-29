@@ -13,6 +13,14 @@
         53175 Bonn<br>
     </p>
     <p>
+        <!-- <b>Vertreten durch:</b><br> -->
+        1. Vorsitzender: Philipp Enkler<br>
+        2. Vorsitzender: Gereon Risse<br>
+        Schatzmeister: Laurenz Groß<br>
+        Viertes Vorstandsmitglied: Frederik Nießen<br>
+        Fünftes Vorstandsmitglied: Melina Bungartz<br>
+    </p>
+    <p>
         VR Bonn Nr. 11758
     </p>
     <p>
